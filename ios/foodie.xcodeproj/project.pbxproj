@@ -12,44 +12,36 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		142A00FE0BA042B492DFA823 /* Acumin Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71715124BBEA4632BF9FD638 /* Acumin Pro Bold.otf */; };
-		423DA2E718B94FF390147A43 /* Acumin Pro UltraBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02628FAFE5AA4D9395B8DCCC /* Acumin Pro UltraBlack.otf */; };
-		45AF9699E14E4A789BD58E35 /* Acumin Pro Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9DCAFECDAB048459C9DC881 /* Acumin Pro Black.otf */; };
-		569AD39C4BEE4B798A84F3DC /* Acumin Pro Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B59F9150C31340C19C8FB5CE /* Acumin Pro Semibold.otf */; };
+		181C0714D96146CBA3B0AB38 /* RedHatDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D79FCFF931C4451B8400C02 /* RedHatDisplay-SemiBold.ttf */; };
+		2280271DBF1A4C299F27C3ED /* RedHatDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27316C1B03F5413A91849FD9 /* RedHatDisplay-Light.ttf */; };
+		3CC702E3FE77412586D6FD35 /* RedHatDisplay-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A89BF48E2193460C80288781 /* RedHatDisplay-BlackItalic.ttf */; };
+		40D4A7505E0C4837B2071B62 /* RedHatDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59975A5474744F45AE621AF6 /* RedHatDisplay-BoldItalic.ttf */; };
+		690780D2AF944978A90B7FCA /* RedHatDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4AC9114DACE4E50A9173713 /* RedHatDisplay-Black.ttf */; };
+		71EC272FD380461798D70AFF /* RedHatDisplay-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7A776ECF9E44F20A9862DBE /* RedHatDisplay-ExtraBoldItalic.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-foodie-foodieTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-foodie-foodieTests.a */; };
-		77B160AE6A3F46C9B3EA20E8 /* Acumin Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50BA43C3C6FA4F7287D58195 /* Acumin Pro Light.otf */; };
-		7DE0D205BD374F0D9AE073FB /* Acumin Pro UltraBlack Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCDE4BF9749F43B6B7EDCF64 /* Acumin Pro UltraBlack Italic.otf */; };
+		7CB8C23AC3964F298872B4CD /* RedHatDisplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D50B041B366444B292D76871 /* RedHatDisplay-Italic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		84C15CEB79BA4518B6081404 /* Acumin Pro Book Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3305F5500FE41DE9B6569C3 /* Acumin Pro Book Italic.otf */; };
-		87368796AF004278BBD3B860 /* Acumin Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D8A4CE123B4A97BB44996B /* Acumin Pro Medium.otf */; };
-		9B01043CBB34405CBE69FD4A /* Acumin Pro Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B2143433FF74E55B5B7A486 /* Acumin Pro Thin.otf */; };
-		B050CF3C09CF47FF96FEDD93 /* Acumin Pro Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BB9CDD59048645EC93638A56 /* Acumin Pro Medium Italic.otf */; };
-		B50D2F1C2A973C93005F3E90 /* Acumin Pro Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F0A2A973C93005F3E90 /* Acumin Pro Book.otf */; };
-		B50D2F1D2A973C93005F3E90 /* Acumin Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F0B2A973C93005F3E90 /* Acumin Pro Light.otf */; };
-		B50D2F1E2A973C93005F3E90 /* Acumin Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F0C2A973C93005F3E90 /* Acumin Pro Bold.otf */; };
-		B50D2F1F2A973C93005F3E90 /* Acumin Pro Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F0D2A973C93005F3E90 /* Acumin Pro Black Italic.otf */; };
-		B50D2F202A973C93005F3E90 /* Acumin Pro Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F0E2A973C93005F3E90 /* Acumin Pro Thin.otf */; };
-		B50D2F212A973C93005F3E90 /* Acumin Pro UltraBlack Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F0F2A973C93005F3E90 /* Acumin Pro UltraBlack Italic.otf */; };
-		B50D2F222A973C93005F3E90 /* Acumin Pro ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F102A973C93005F3E90 /* Acumin Pro ExtraLight.otf */; };
-		B50D2F232A973C93005F3E90 /* Acumin Pro Thin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F112A973C93005F3E90 /* Acumin Pro Thin Italic.otf */; };
-		B50D2F242A973C93005F3E90 /* Acumin Pro Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F122A973C93005F3E90 /* Acumin Pro Light Italic.otf */; };
-		B50D2F252A973C93005F3E90 /* Acumin Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F132A973C93005F3E90 /* Acumin Pro Medium.otf */; };
-		B50D2F262A973C93005F3E90 /* Acumin Pro Book Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F142A973C93005F3E90 /* Acumin Pro Book Italic.otf */; };
-		B50D2F272A973C93005F3E90 /* Acumin Pro Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F152A973C93005F3E90 /* Acumin Pro Black.otf */; };
-		B50D2F282A973C93005F3E90 /* Acumin Pro ExtraLight Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F162A973C93005F3E90 /* Acumin Pro ExtraLight Italic.otf */; };
-		B50D2F292A973C93005F3E90 /* Acumin Pro Semibold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F172A973C93005F3E90 /* Acumin Pro Semibold Italic.otf */; };
-		B50D2F2A2A973C93005F3E90 /* Acumin Pro UltraBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F182A973C93005F3E90 /* Acumin Pro UltraBlack.otf */; };
-		B50D2F2B2A973C93005F3E90 /* Acumin Pro Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F192A973C93005F3E90 /* Acumin Pro Semibold.otf */; };
-		B50D2F2C2A973C93005F3E90 /* Acumin Pro Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F1A2A973C93005F3E90 /* Acumin Pro Medium Italic.otf */; };
-		B50D2F2D2A973C93005F3E90 /* Acumin Pro Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B50D2F1B2A973C93005F3E90 /* Acumin Pro Bold Italic.otf */; };
-		BE12383E1F8C4BA984A10536 /* Acumin Pro Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 73B48F7ED3854A19859D04DC /* Acumin Pro Book.otf */; };
-		CE8E43A3E834427D8C7D45B8 /* Acumin Pro Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8D2A9B7FDF6444FC86E1A2FC /* Acumin Pro Black Italic.otf */; };
-		D5471FB10EEF4A9A99B01CBC /* Acumin Pro Thin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B18A5EFA5A14584AD953A64 /* Acumin Pro Thin Italic.otf */; };
-		DA7CF4A3602E468081A35FFD /* Acumin Pro ExtraLight Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A460FDCE707B49A286BB9D4A /* Acumin Pro ExtraLight Italic.otf */; };
-		DBEC20810C154F95A9C0FDB3 /* Acumin Pro Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2B87A6935EB49A98221245D /* Acumin Pro Bold Italic.otf */; };
-		E4A9B172ECA64195BFA2CA3D /* Acumin Pro ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4522B539AE08416687F02BAD /* Acumin Pro ExtraLight.otf */; };
-		E959E9ACFDDD435FB2EE844D /* Acumin Pro Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B1FE12AEDED848C0B322E9C3 /* Acumin Pro Light Italic.otf */; };
-		F74FC729EE2A4DA68DE9D0AB /* Acumin Pro Semibold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75D3446460C74F9A8D85F5E0 /* Acumin Pro Semibold Italic.otf */; };
+		82AF8F0B1C574D8592245ACB /* RedHatDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32927F42D5D14E418D4ABCA9 /* RedHatDisplay-Regular.ttf */; };
+		84EE3D1397724BE488FB9ACD /* RedHatDisplay-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 191CCE75DED04C01B6B97072 /* RedHatDisplay-MediumItalic.ttf */; };
+		B5D552B42A9880A800D05A66 /* RedHatDisplay-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552A62A9880A800D05A66 /* RedHatDisplay-BlackItalic.ttf */; };
+		B5D552B52A9880A800D05A66 /* RedHatDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552A72A9880A800D05A66 /* RedHatDisplay-Black.ttf */; };
+		B5D552B62A9880A800D05A66 /* RedHatDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552A82A9880A800D05A66 /* RedHatDisplay-ExtraBold.ttf */; };
+		B5D552B72A9880A800D05A66 /* RedHatDisplay-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552A92A9880A800D05A66 /* RedHatDisplay-MediumItalic.ttf */; };
+		B5D552B82A9880A800D05A66 /* RedHatDisplay-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552AA2A9880A800D05A66 /* RedHatDisplay-SemiBoldItalic.ttf */; };
+		B5D552B92A9880A800D05A66 /* RedHatDisplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552AB2A9880A800D05A66 /* RedHatDisplay-Italic.ttf */; };
+		B5D552BA2A9880A800D05A66 /* RedHatDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552AC2A9880A800D05A66 /* RedHatDisplay-Bold.ttf */; };
+		B5D552BB2A9880A800D05A66 /* RedHatDisplay-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552AD2A9880A800D05A66 /* RedHatDisplay-LightItalic.ttf */; };
+		B5D552BC2A9880A800D05A66 /* RedHatDisplay-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552AE2A9880A800D05A66 /* RedHatDisplay-ExtraBoldItalic.ttf */; };
+		B5D552BD2A9880A800D05A66 /* RedHatDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552AF2A9880A800D05A66 /* RedHatDisplay-Medium.ttf */; };
+		B5D552BE2A9880A800D05A66 /* RedHatDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552B02A9880A800D05A66 /* RedHatDisplay-SemiBold.ttf */; };
+		B5D552BF2A9880A800D05A66 /* RedHatDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552B12A9880A800D05A66 /* RedHatDisplay-BoldItalic.ttf */; };
+		B5D552C02A9880A800D05A66 /* RedHatDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552B22A9880A800D05A66 /* RedHatDisplay-Light.ttf */; };
+		B5D552C12A9880A800D05A66 /* RedHatDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D552B32A9880A800D05A66 /* RedHatDisplay-Regular.ttf */; };
+		B8813F9E2D0E4716A9BECCDB /* RedHatDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B52F3E6369884FD1AEEA3AD7 /* RedHatDisplay-Bold.ttf */; };
+		BBCA6EEB3C9640E890B5364A /* RedHatDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C10ECAC9F174BC9BD8A26A2 /* RedHatDisplay-ExtraBold.ttf */; };
+		D136123BE5BE43E3B9012A3E /* RedHatDisplay-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D82EAC9B81884D038A290B3F /* RedHatDisplay-SemiBoldItalic.ttf */; };
+		F991B98BC4574BDB855B39A8 /* RedHatDisplay-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1AF45C132D84B24BA63D3D6 /* RedHatDisplay-LightItalic.ttf */; };
+		FD4C771135DC440AB2F6A55C /* RedHatDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D11E93066464CBC9908F94B /* RedHatDisplay-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,55 +58,47 @@
 		00E356EE1AD99517003FC87E /* foodieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* foodieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = foodieTests.m; sourceTree = "<group>"; };
-		02628FAFE5AA4D9395B8DCCC /* Acumin Pro UltraBlack.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro UltraBlack.otf"; path = "../src/assets/fonts/Acumin Pro UltraBlack.otf"; sourceTree = "<group>"; };
-		0B18A5EFA5A14584AD953A64 /* Acumin Pro Thin Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Thin Italic.otf"; path = "../src/assets/fonts/Acumin Pro Thin Italic.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = foodie/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = foodie/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = foodie/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = foodie/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = foodie/main.m; sourceTree = "<group>"; };
+		191CCE75DED04C01B6B97072 /* RedHatDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-MediumItalic.ttf"; path = "../src/assets/fonts/RedHatDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-foodie-foodieTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodie-foodieTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27316C1B03F5413A91849FD9 /* RedHatDisplay-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-Light.ttf"; path = "../src/assets/fonts/RedHatDisplay-Light.ttf"; sourceTree = "<group>"; };
+		32927F42D5D14E418D4ABCA9 /* RedHatDisplay-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-Regular.ttf"; path = "../src/assets/fonts/RedHatDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-foodie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodie.debug.xcconfig"; path = "Target Support Files/Pods-foodie/Pods-foodie.debug.xcconfig"; sourceTree = "<group>"; };
-		4522B539AE08416687F02BAD /* Acumin Pro ExtraLight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro ExtraLight.otf"; path = "../src/assets/fonts/Acumin Pro ExtraLight.otf"; sourceTree = "<group>"; };
-		50BA43C3C6FA4F7287D58195 /* Acumin Pro Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Light.otf"; path = "../src/assets/fonts/Acumin Pro Light.otf"; sourceTree = "<group>"; };
+		3D11E93066464CBC9908F94B /* RedHatDisplay-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-Medium.ttf"; path = "../src/assets/fonts/RedHatDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		3D79FCFF931C4451B8400C02 /* RedHatDisplay-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-SemiBold.ttf"; path = "../src/assets/fonts/RedHatDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-foodie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodie.release.xcconfig"; path = "Target Support Files/Pods-foodie/Pods-foodie.release.xcconfig"; sourceTree = "<group>"; };
+		59975A5474744F45AE621AF6 /* RedHatDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-BoldItalic.ttf"; path = "../src/assets/fonts/RedHatDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-foodie-foodieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodie-foodieTests.debug.xcconfig"; path = "Target Support Files/Pods-foodie-foodieTests/Pods-foodie-foodieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-foodie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		71715124BBEA4632BF9FD638 /* Acumin Pro Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Bold.otf"; path = "../src/assets/fonts/Acumin Pro Bold.otf"; sourceTree = "<group>"; };
-		73B48F7ED3854A19859D04DC /* Acumin Pro Book.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Book.otf"; path = "../src/assets/fonts/Acumin Pro Book.otf"; sourceTree = "<group>"; };
-		75D3446460C74F9A8D85F5E0 /* Acumin Pro Semibold Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Semibold Italic.otf"; path = "../src/assets/fonts/Acumin Pro Semibold Italic.otf"; sourceTree = "<group>"; };
+		6C10ECAC9F174BC9BD8A26A2 /* RedHatDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-ExtraBold.ttf"; path = "../src/assets/fonts/RedHatDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = foodie/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-foodie-foodieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodie-foodieTests.release.xcconfig"; path = "Target Support Files/Pods-foodie-foodieTests/Pods-foodie-foodieTests.release.xcconfig"; sourceTree = "<group>"; };
-		8B2143433FF74E55B5B7A486 /* Acumin Pro Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Thin.otf"; path = "../src/assets/fonts/Acumin Pro Thin.otf"; sourceTree = "<group>"; };
-		8D2A9B7FDF6444FC86E1A2FC /* Acumin Pro Black Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Black Italic.otf"; path = "../src/assets/fonts/Acumin Pro Black Italic.otf"; sourceTree = "<group>"; };
-		A460FDCE707B49A286BB9D4A /* Acumin Pro ExtraLight Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro ExtraLight Italic.otf"; path = "../src/assets/fonts/Acumin Pro ExtraLight Italic.otf"; sourceTree = "<group>"; };
-		B1FE12AEDED848C0B322E9C3 /* Acumin Pro Light Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Light Italic.otf"; path = "../src/assets/fonts/Acumin Pro Light Italic.otf"; sourceTree = "<group>"; };
-		B50D2F0A2A973C93005F3E90 /* Acumin Pro Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Book.otf"; sourceTree = "<group>"; };
-		B50D2F0B2A973C93005F3E90 /* Acumin Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Light.otf"; sourceTree = "<group>"; };
-		B50D2F0C2A973C93005F3E90 /* Acumin Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Bold.otf"; sourceTree = "<group>"; };
-		B50D2F0D2A973C93005F3E90 /* Acumin Pro Black Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Black Italic.otf"; sourceTree = "<group>"; };
-		B50D2F0E2A973C93005F3E90 /* Acumin Pro Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Thin.otf"; sourceTree = "<group>"; };
-		B50D2F0F2A973C93005F3E90 /* Acumin Pro UltraBlack Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro UltraBlack Italic.otf"; sourceTree = "<group>"; };
-		B50D2F102A973C93005F3E90 /* Acumin Pro ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro ExtraLight.otf"; sourceTree = "<group>"; };
-		B50D2F112A973C93005F3E90 /* Acumin Pro Thin Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Thin Italic.otf"; sourceTree = "<group>"; };
-		B50D2F122A973C93005F3E90 /* Acumin Pro Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Light Italic.otf"; sourceTree = "<group>"; };
-		B50D2F132A973C93005F3E90 /* Acumin Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Medium.otf"; sourceTree = "<group>"; };
-		B50D2F142A973C93005F3E90 /* Acumin Pro Book Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Book Italic.otf"; sourceTree = "<group>"; };
-		B50D2F152A973C93005F3E90 /* Acumin Pro Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Black.otf"; sourceTree = "<group>"; };
-		B50D2F162A973C93005F3E90 /* Acumin Pro ExtraLight Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro ExtraLight Italic.otf"; sourceTree = "<group>"; };
-		B50D2F172A973C93005F3E90 /* Acumin Pro Semibold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Semibold Italic.otf"; sourceTree = "<group>"; };
-		B50D2F182A973C93005F3E90 /* Acumin Pro UltraBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro UltraBlack.otf"; sourceTree = "<group>"; };
-		B50D2F192A973C93005F3E90 /* Acumin Pro Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Semibold.otf"; sourceTree = "<group>"; };
-		B50D2F1A2A973C93005F3E90 /* Acumin Pro Medium Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Medium Italic.otf"; sourceTree = "<group>"; };
-		B50D2F1B2A973C93005F3E90 /* Acumin Pro Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Bold Italic.otf"; sourceTree = "<group>"; };
-		B59F9150C31340C19C8FB5CE /* Acumin Pro Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Semibold.otf"; path = "../src/assets/fonts/Acumin Pro Semibold.otf"; sourceTree = "<group>"; };
-		BB9CDD59048645EC93638A56 /* Acumin Pro Medium Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Medium Italic.otf"; path = "../src/assets/fonts/Acumin Pro Medium Italic.otf"; sourceTree = "<group>"; };
-		C3305F5500FE41DE9B6569C3 /* Acumin Pro Book Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Book Italic.otf"; path = "../src/assets/fonts/Acumin Pro Book Italic.otf"; sourceTree = "<group>"; };
-		D3D8A4CE123B4A97BB44996B /* Acumin Pro Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Medium.otf"; path = "../src/assets/fonts/Acumin Pro Medium.otf"; sourceTree = "<group>"; };
-		DCDE4BF9749F43B6B7EDCF64 /* Acumin Pro UltraBlack Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro UltraBlack Italic.otf"; path = "../src/assets/fonts/Acumin Pro UltraBlack Italic.otf"; sourceTree = "<group>"; };
-		E2B87A6935EB49A98221245D /* Acumin Pro Bold Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Bold Italic.otf"; path = "../src/assets/fonts/Acumin Pro Bold Italic.otf"; sourceTree = "<group>"; };
-		E9DCAFECDAB048459C9DC881 /* Acumin Pro Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Acumin Pro Black.otf"; path = "../src/assets/fonts/Acumin Pro Black.otf"; sourceTree = "<group>"; };
+		A4AC9114DACE4E50A9173713 /* RedHatDisplay-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-Black.ttf"; path = "../src/assets/fonts/RedHatDisplay-Black.ttf"; sourceTree = "<group>"; };
+		A7A776ECF9E44F20A9862DBE /* RedHatDisplay-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/RedHatDisplay-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		A89BF48E2193460C80288781 /* RedHatDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-BlackItalic.ttf"; path = "../src/assets/fonts/RedHatDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B52F3E6369884FD1AEEA3AD7 /* RedHatDisplay-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-Bold.ttf"; path = "../src/assets/fonts/RedHatDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		B5D552A62A9880A800D05A66 /* RedHatDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B5D552A72A9880A800D05A66 /* RedHatDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Black.ttf"; sourceTree = "<group>"; };
+		B5D552A82A9880A800D05A66 /* RedHatDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B5D552A92A9880A800D05A66 /* RedHatDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
+		B5D552AA2A9880A800D05A66 /* RedHatDisplay-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		B5D552AB2A9880A800D05A66 /* RedHatDisplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Italic.ttf"; sourceTree = "<group>"; };
+		B5D552AC2A9880A800D05A66 /* RedHatDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		B5D552AD2A9880A800D05A66 /* RedHatDisplay-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-LightItalic.ttf"; sourceTree = "<group>"; };
+		B5D552AE2A9880A800D05A66 /* RedHatDisplay-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		B5D552AF2A9880A800D05A66 /* RedHatDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		B5D552B02A9880A800D05A66 /* RedHatDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
+		B5D552B12A9880A800D05A66 /* RedHatDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B5D552B22A9880A800D05A66 /* RedHatDisplay-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Light.ttf"; sourceTree = "<group>"; };
+		B5D552B32A9880A800D05A66 /* RedHatDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		C1AF45C132D84B24BA63D3D6 /* RedHatDisplay-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-LightItalic.ttf"; path = "../src/assets/fonts/RedHatDisplay-LightItalic.ttf"; sourceTree = "<group>"; };
+		D50B041B366444B292D76871 /* RedHatDisplay-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-Italic.ttf"; path = "../src/assets/fonts/RedHatDisplay-Italic.ttf"; sourceTree = "<group>"; };
+		D82EAC9B81884D038A290B3F /* RedHatDisplay-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-SemiBoldItalic.ttf"; path = "../src/assets/fonts/RedHatDisplay-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -181,24 +165,20 @@
 		55EE1F6CDDE44C209BB454F9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8D2A9B7FDF6444FC86E1A2FC /* Acumin Pro Black Italic.otf */,
-				E9DCAFECDAB048459C9DC881 /* Acumin Pro Black.otf */,
-				E2B87A6935EB49A98221245D /* Acumin Pro Bold Italic.otf */,
-				71715124BBEA4632BF9FD638 /* Acumin Pro Bold.otf */,
-				C3305F5500FE41DE9B6569C3 /* Acumin Pro Book Italic.otf */,
-				73B48F7ED3854A19859D04DC /* Acumin Pro Book.otf */,
-				A460FDCE707B49A286BB9D4A /* Acumin Pro ExtraLight Italic.otf */,
-				4522B539AE08416687F02BAD /* Acumin Pro ExtraLight.otf */,
-				B1FE12AEDED848C0B322E9C3 /* Acumin Pro Light Italic.otf */,
-				50BA43C3C6FA4F7287D58195 /* Acumin Pro Light.otf */,
-				BB9CDD59048645EC93638A56 /* Acumin Pro Medium Italic.otf */,
-				D3D8A4CE123B4A97BB44996B /* Acumin Pro Medium.otf */,
-				75D3446460C74F9A8D85F5E0 /* Acumin Pro Semibold Italic.otf */,
-				B59F9150C31340C19C8FB5CE /* Acumin Pro Semibold.otf */,
-				0B18A5EFA5A14584AD953A64 /* Acumin Pro Thin Italic.otf */,
-				8B2143433FF74E55B5B7A486 /* Acumin Pro Thin.otf */,
-				DCDE4BF9749F43B6B7EDCF64 /* Acumin Pro UltraBlack Italic.otf */,
-				02628FAFE5AA4D9395B8DCCC /* Acumin Pro UltraBlack.otf */,
+				A4AC9114DACE4E50A9173713 /* RedHatDisplay-Black.ttf */,
+				A89BF48E2193460C80288781 /* RedHatDisplay-BlackItalic.ttf */,
+				B52F3E6369884FD1AEEA3AD7 /* RedHatDisplay-Bold.ttf */,
+				59975A5474744F45AE621AF6 /* RedHatDisplay-BoldItalic.ttf */,
+				6C10ECAC9F174BC9BD8A26A2 /* RedHatDisplay-ExtraBold.ttf */,
+				A7A776ECF9E44F20A9862DBE /* RedHatDisplay-ExtraBoldItalic.ttf */,
+				D50B041B366444B292D76871 /* RedHatDisplay-Italic.ttf */,
+				27316C1B03F5413A91849FD9 /* RedHatDisplay-Light.ttf */,
+				C1AF45C132D84B24BA63D3D6 /* RedHatDisplay-LightItalic.ttf */,
+				3D11E93066464CBC9908F94B /* RedHatDisplay-Medium.ttf */,
+				191CCE75DED04C01B6B97072 /* RedHatDisplay-MediumItalic.ttf */,
+				32927F42D5D14E418D4ABCA9 /* RedHatDisplay-Regular.ttf */,
+				3D79FCFF931C4451B8400C02 /* RedHatDisplay-SemiBold.ttf */,
+				D82EAC9B81884D038A290B3F /* RedHatDisplay-SemiBoldItalic.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -213,7 +193,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				B50D2F092A973C93005F3E90 /* fonts */,
+				B5D552A52A9880A800D05A66 /* fonts */,
 				13B07FAE1A68108700A75B9A /* foodie */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* foodieTests */,
@@ -236,27 +216,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B50D2F092A973C93005F3E90 /* fonts */ = {
+		B5D552A52A9880A800D05A66 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				B50D2F0A2A973C93005F3E90 /* Acumin Pro Book.otf */,
-				B50D2F0B2A973C93005F3E90 /* Acumin Pro Light.otf */,
-				B50D2F0C2A973C93005F3E90 /* Acumin Pro Bold.otf */,
-				B50D2F0D2A973C93005F3E90 /* Acumin Pro Black Italic.otf */,
-				B50D2F0E2A973C93005F3E90 /* Acumin Pro Thin.otf */,
-				B50D2F0F2A973C93005F3E90 /* Acumin Pro UltraBlack Italic.otf */,
-				B50D2F102A973C93005F3E90 /* Acumin Pro ExtraLight.otf */,
-				B50D2F112A973C93005F3E90 /* Acumin Pro Thin Italic.otf */,
-				B50D2F122A973C93005F3E90 /* Acumin Pro Light Italic.otf */,
-				B50D2F132A973C93005F3E90 /* Acumin Pro Medium.otf */,
-				B50D2F142A973C93005F3E90 /* Acumin Pro Book Italic.otf */,
-				B50D2F152A973C93005F3E90 /* Acumin Pro Black.otf */,
-				B50D2F162A973C93005F3E90 /* Acumin Pro ExtraLight Italic.otf */,
-				B50D2F172A973C93005F3E90 /* Acumin Pro Semibold Italic.otf */,
-				B50D2F182A973C93005F3E90 /* Acumin Pro UltraBlack.otf */,
-				B50D2F192A973C93005F3E90 /* Acumin Pro Semibold.otf */,
-				B50D2F1A2A973C93005F3E90 /* Acumin Pro Medium Italic.otf */,
-				B50D2F1B2A973C93005F3E90 /* Acumin Pro Bold Italic.otf */,
+				B5D552A62A9880A800D05A66 /* RedHatDisplay-BlackItalic.ttf */,
+				B5D552A72A9880A800D05A66 /* RedHatDisplay-Black.ttf */,
+				B5D552A82A9880A800D05A66 /* RedHatDisplay-ExtraBold.ttf */,
+				B5D552A92A9880A800D05A66 /* RedHatDisplay-MediumItalic.ttf */,
+				B5D552AA2A9880A800D05A66 /* RedHatDisplay-SemiBoldItalic.ttf */,
+				B5D552AB2A9880A800D05A66 /* RedHatDisplay-Italic.ttf */,
+				B5D552AC2A9880A800D05A66 /* RedHatDisplay-Bold.ttf */,
+				B5D552AD2A9880A800D05A66 /* RedHatDisplay-LightItalic.ttf */,
+				B5D552AE2A9880A800D05A66 /* RedHatDisplay-ExtraBoldItalic.ttf */,
+				B5D552AF2A9880A800D05A66 /* RedHatDisplay-Medium.ttf */,
+				B5D552B02A9880A800D05A66 /* RedHatDisplay-SemiBold.ttf */,
+				B5D552B12A9880A800D05A66 /* RedHatDisplay-BoldItalic.ttf */,
+				B5D552B22A9880A800D05A66 /* RedHatDisplay-Light.ttf */,
+				B5D552B32A9880A800D05A66 /* RedHatDisplay-Regular.ttf */,
 			);
 			name = fonts;
 			path = ../src/assets/fonts;
@@ -367,44 +343,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B50D2F212A973C93005F3E90 /* Acumin Pro UltraBlack Italic.otf in Resources */,
-				B50D2F222A973C93005F3E90 /* Acumin Pro ExtraLight.otf in Resources */,
-				B50D2F202A973C93005F3E90 /* Acumin Pro Thin.otf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				B50D2F2A2A973C93005F3E90 /* Acumin Pro UltraBlack.otf in Resources */,
-				B50D2F1F2A973C93005F3E90 /* Acumin Pro Black Italic.otf in Resources */,
-				B50D2F282A973C93005F3E90 /* Acumin Pro ExtraLight Italic.otf in Resources */,
-				B50D2F242A973C93005F3E90 /* Acumin Pro Light Italic.otf in Resources */,
-				B50D2F262A973C93005F3E90 /* Acumin Pro Book Italic.otf in Resources */,
-				B50D2F292A973C93005F3E90 /* Acumin Pro Semibold Italic.otf in Resources */,
-				B50D2F1D2A973C93005F3E90 /* Acumin Pro Light.otf in Resources */,
-				B50D2F1E2A973C93005F3E90 /* Acumin Pro Bold.otf in Resources */,
-				B50D2F1C2A973C93005F3E90 /* Acumin Pro Book.otf in Resources */,
-				B50D2F232A973C93005F3E90 /* Acumin Pro Thin Italic.otf in Resources */,
-				B50D2F2C2A973C93005F3E90 /* Acumin Pro Medium Italic.otf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				B50D2F2B2A973C93005F3E90 /* Acumin Pro Semibold.otf in Resources */,
-				B50D2F272A973C93005F3E90 /* Acumin Pro Black.otf in Resources */,
-				B50D2F2D2A973C93005F3E90 /* Acumin Pro Bold Italic.otf in Resources */,
-				B50D2F252A973C93005F3E90 /* Acumin Pro Medium.otf in Resources */,
-				CE8E43A3E834427D8C7D45B8 /* Acumin Pro Black Italic.otf in Resources */,
-				45AF9699E14E4A789BD58E35 /* Acumin Pro Black.otf in Resources */,
-				DBEC20810C154F95A9C0FDB3 /* Acumin Pro Bold Italic.otf in Resources */,
-				142A00FE0BA042B492DFA823 /* Acumin Pro Bold.otf in Resources */,
-				84C15CEB79BA4518B6081404 /* Acumin Pro Book Italic.otf in Resources */,
-				BE12383E1F8C4BA984A10536 /* Acumin Pro Book.otf in Resources */,
-				DA7CF4A3602E468081A35FFD /* Acumin Pro ExtraLight Italic.otf in Resources */,
-				E4A9B172ECA64195BFA2CA3D /* Acumin Pro ExtraLight.otf in Resources */,
-				E959E9ACFDDD435FB2EE844D /* Acumin Pro Light Italic.otf in Resources */,
-				77B160AE6A3F46C9B3EA20E8 /* Acumin Pro Light.otf in Resources */,
-				B050CF3C09CF47FF96FEDD93 /* Acumin Pro Medium Italic.otf in Resources */,
-				87368796AF004278BBD3B860 /* Acumin Pro Medium.otf in Resources */,
-				F74FC729EE2A4DA68DE9D0AB /* Acumin Pro Semibold Italic.otf in Resources */,
-				569AD39C4BEE4B798A84F3DC /* Acumin Pro Semibold.otf in Resources */,
-				D5471FB10EEF4A9A99B01CBC /* Acumin Pro Thin Italic.otf in Resources */,
-				9B01043CBB34405CBE69FD4A /* Acumin Pro Thin.otf in Resources */,
-				7DE0D205BD374F0D9AE073FB /* Acumin Pro UltraBlack Italic.otf in Resources */,
-				423DA2E718B94FF390147A43 /* Acumin Pro UltraBlack.otf in Resources */,
+				B5D552C12A9880A800D05A66 /* RedHatDisplay-Regular.ttf in Resources */,
+				B5D552B72A9880A800D05A66 /* RedHatDisplay-MediumItalic.ttf in Resources */,
+				B5D552B62A9880A800D05A66 /* RedHatDisplay-ExtraBold.ttf in Resources */,
+				B5D552BB2A9880A800D05A66 /* RedHatDisplay-LightItalic.ttf in Resources */,
+				B5D552B42A9880A800D05A66 /* RedHatDisplay-BlackItalic.ttf in Resources */,
+				B5D552B92A9880A800D05A66 /* RedHatDisplay-Italic.ttf in Resources */,
+				B5D552BC2A9880A800D05A66 /* RedHatDisplay-ExtraBoldItalic.ttf in Resources */,
+				B5D552BE2A9880A800D05A66 /* RedHatDisplay-SemiBold.ttf in Resources */,
+				B5D552BD2A9880A800D05A66 /* RedHatDisplay-Medium.ttf in Resources */,
+				B5D552B52A9880A800D05A66 /* RedHatDisplay-Black.ttf in Resources */,
+				B5D552C02A9880A800D05A66 /* RedHatDisplay-Light.ttf in Resources */,
+				B5D552BA2A9880A800D05A66 /* RedHatDisplay-Bold.ttf in Resources */,
+				B5D552BF2A9880A800D05A66 /* RedHatDisplay-BoldItalic.ttf in Resources */,
+				B5D552B82A9880A800D05A66 /* RedHatDisplay-SemiBoldItalic.ttf in Resources */,
+				690780D2AF944978A90B7FCA /* RedHatDisplay-Black.ttf in Resources */,
+				3CC702E3FE77412586D6FD35 /* RedHatDisplay-BlackItalic.ttf in Resources */,
+				B8813F9E2D0E4716A9BECCDB /* RedHatDisplay-Bold.ttf in Resources */,
+				40D4A7505E0C4837B2071B62 /* RedHatDisplay-BoldItalic.ttf in Resources */,
+				BBCA6EEB3C9640E890B5364A /* RedHatDisplay-ExtraBold.ttf in Resources */,
+				71EC272FD380461798D70AFF /* RedHatDisplay-ExtraBoldItalic.ttf in Resources */,
+				7CB8C23AC3964F298872B4CD /* RedHatDisplay-Italic.ttf in Resources */,
+				2280271DBF1A4C299F27C3ED /* RedHatDisplay-Light.ttf in Resources */,
+				F991B98BC4574BDB855B39A8 /* RedHatDisplay-LightItalic.ttf in Resources */,
+				FD4C771135DC440AB2F6A55C /* RedHatDisplay-Medium.ttf in Resources */,
+				84EE3D1397724BE488FB9ACD /* RedHatDisplay-MediumItalic.ttf in Resources */,
+				82AF8F0B1C574D8592245ACB /* RedHatDisplay-Regular.ttf in Resources */,
+				181C0714D96146CBA3B0AB38 /* RedHatDisplay-SemiBold.ttf in Resources */,
+				D136123BE5BE43E3B9012A3E /* RedHatDisplay-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

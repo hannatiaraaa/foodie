@@ -2,76 +2,60 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "src/assets/fonts/Acumin Pro Black Italic.otf",
-      "sha1": "d76112cb1329a19c76d63742d550ddf6a01d8afc"
+      "path": "src/assets/fonts/RedHatDisplay-Black.ttf",
+      "sha1": "f42314811d1b567a9b54a2565f77d36662b4fe0b"
     },
     {
-      "path": "src/assets/fonts/Acumin Pro Black.otf",
-      "sha1": "5acac87b538c2de13fe515032b51bfaf25119faf"
+      "path": "src/assets/fonts/RedHatDisplay-BlackItalic.ttf",
+      "sha1": "8ba062335b57b6121e0451cd891b1daf1d5518b5"
     },
     {
-      "path": "src/assets/fonts/Acumin Pro Bold Italic.otf",
-      "sha1": "64ba6b5fd476cb9cbbabe3989c8b75a60bc911d6"
+      "path": "src/assets/fonts/RedHatDisplay-Bold.ttf",
+      "sha1": "d4c62f17bd50374d4796dfdfea0844701882ea96"
     },
     {
-      "path": "src/assets/fonts/Acumin Pro Bold.otf",
-      "sha1": "efaa996218051b75248badaf21f93345f08c39bd"
+      "path": "src/assets/fonts/RedHatDisplay-BoldItalic.ttf",
+      "sha1": "6773bef8fcf7b61f27c03e7abc6ec10586324640"
     },
     {
-      "path": "src/assets/fonts/Acumin Pro Book Italic.otf",
-      "sha1": "a6dc2707cf2a62b08f497e8219060a5c98f77503"
+      "path": "src/assets/fonts/RedHatDisplay-ExtraBold.ttf",
+      "sha1": "3c03474f863d912b4cff1500a982f4879964d354"
     },
     {
-      "path": "src/assets/fonts/Acumin Pro Book.otf",
-      "sha1": "31bfa4d0c2cfa6801ee700e0a73358f5b9a727c7"
+      "path": "src/assets/fonts/RedHatDisplay-ExtraBoldItalic.ttf",
+      "sha1": "32cc0aa93e57a791072f6773d1c72c3a62d16ba0"
     },
     {
-      "path": "src/assets/fonts/Acumin Pro ExtraLight Italic.otf",
-      "sha1": "3149070240d3fa9ab350524f8dc2b507c3c0d9f9"
+      "path": "src/assets/fonts/RedHatDisplay-Italic.ttf",
+      "sha1": "56295449c835ce147a6519f0645da57a8ddcd8dd"
     },
     {
-      "path": "src/assets/fonts/Acumin Pro ExtraLight.otf",
-      "sha1": "749a0a73999e67f99d0452ca1a1e5cc82f291a12"
+      "path": "src/assets/fonts/RedHatDisplay-Light.ttf",
+      "sha1": "6bcf9928cfa278b9c44322fbedbea77592ce4bd0"
     },
     {
-      "path": "src/assets/fonts/Acumin Pro Light Italic.otf",
-      "sha1": "e22d371d327ae680108409021c318aaae7b09260"
+      "path": "src/assets/fonts/RedHatDisplay-LightItalic.ttf",
+      "sha1": "c6c798a9033fe5a73e63bdb7c1bc85b44131596f"
     },
     {
-      "path": "src/assets/fonts/Acumin Pro Light.otf",
-      "sha1": "5114d3b38a893040edc9a412066898ed0ac0065e"
+      "path": "src/assets/fonts/RedHatDisplay-Medium.ttf",
+      "sha1": "f1f7171add35c1b47bdd6e456ad05a9499365c9b"
     },
     {
-      "path": "src/assets/fonts/Acumin Pro Medium Italic.otf",
-      "sha1": "6f90cb65e8912faa93674e34b65abee8c1e23a38"
+      "path": "src/assets/fonts/RedHatDisplay-MediumItalic.ttf",
+      "sha1": "070f757546d0591cf41fabf55609660e7a0a2938"
     },
     {
-      "path": "src/assets/fonts/Acumin Pro Medium.otf",
-      "sha1": "33cfbcdac05aa8a5ba09aa7f6a369dacbeaa38a3"
+      "path": "src/assets/fonts/RedHatDisplay-Regular.ttf",
+      "sha1": "a88bb6ead24bce67c673802676d453ad4d1a5ffd"
     },
     {
-      "path": "src/assets/fonts/Acumin Pro Semibold Italic.otf",
-      "sha1": "75e242ed8e4c4b3b6f4de512966fe2146ba5f89e"
+      "path": "src/assets/fonts/RedHatDisplay-SemiBold.ttf",
+      "sha1": "6718a33e1f53787e1670a6a2e08519d97fcebfc2"
     },
     {
-      "path": "src/assets/fonts/Acumin Pro Semibold.otf",
-      "sha1": "bec42086821f8e371a4698a09f7bdc456a2d5230"
-    },
-    {
-      "path": "src/assets/fonts/Acumin Pro Thin Italic.otf",
-      "sha1": "43b1af2c377391812345207926f07217933862cd"
-    },
-    {
-      "path": "src/assets/fonts/Acumin Pro Thin.otf",
-      "sha1": "ed10aed23db57ba4572b63b91563550dad4dec39"
-    },
-    {
-      "path": "src/assets/fonts/Acumin Pro UltraBlack Italic.otf",
-      "sha1": "155379238c488974187c8965d5623582dd5e5507"
-    },
-    {
-      "path": "src/assets/fonts/Acumin Pro UltraBlack.otf",
-      "sha1": "1746f9225780f79684408479afcb435ea4d97058"
+      "path": "src/assets/fonts/RedHatDisplay-SemiBoldItalic.ttf",
+      "sha1": "0f64ce81cab295a28c4bd4d34d7ecb767e6bc686"
     }
   ]
 }
