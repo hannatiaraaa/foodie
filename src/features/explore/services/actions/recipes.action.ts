@@ -1,8 +1,8 @@
 import {createAction} from '@reduxjs/toolkit';
 import {
   GET_SEARCH_RECIPES,
-  GetSearchRecipesActionT,
+  TGetSearchRecipesAction,
 } from 'ExploreServices/constants/recipes.type';
 
 export const getSearchRecipes =
-  createAction<GetSearchRecipesActionT>(GET_SEARCH_RECIPES);
+  createAction<TGetSearchRecipesAction>(GET_SEARCH_RECIPES);

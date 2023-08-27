@@ -4,27 +4,27 @@ import {
   setSearchRecipes,
 } from 'ExploreServices/slices/recipes.slice';
 import requestAPI from 'services/requestAPI';
-import {APIResponseT, ArgsSagaT} from 'types/services';
 import {SEARCH_RECIPES_ENDPOINT} from 'ExploreServices/constants/endpoint';
-import {GetSearchRecipesActionT} from 'ExploreServices/constants/recipes.type';
+import {TGetSearchRecipesAction} from 'ExploreServices/constants/recipes.type';
+import {TApiResponse, TArgsSaga} from 'types/services';
 
-type SearchRecipesResT = Record<string, any> | undefined;
+type TSearchRecipesRes = Record<string, any> | undefined;
 
-interface ArgsT extends ArgsSagaT {
-  payload: GetSearchRecipesActionT;
+interface Args extends TArgsSaga {
+  payload: TGetSearchRecipesAction;
 }
 
 export function* getSearchRecipesSaga({
   payload: {params},
   hasTriggerLoading,
-}: ArgsT) {
+}: Args) {
   try {
     if (!hasTriggerLoading) {
       yield put(setLoadingRecipes({isLoading: true}));
     }
 
-    const res: APIResponseT<SearchRecipesResT> = yield call(
-      requestAPI<SearchRecipesResT>,
+    const res: TApiResponse<TSearchRecipesRes> = yield call(
+      requestAPI<TSearchRecipesRes>,
       {
         method: 'GET',
         endpoint: SEARCH_RECIPES_ENDPOINT,

@@ -1,27 +1,19 @@
-import {IsLoadingT} from 'types/services';
+import {TIsLoading} from 'types/services';
+import {TSearchRecipesItem} from 'Explore/types/searchRecipes.type';
 
 export const RECIPES_SLICE = 'Recipes';
 export const GET_SEARCH_RECIPES = `${RECIPES_SLICE}/getSearchRecipes`;
 export const SET_SEARCH_RECIPES = `${RECIPES_SLICE}/setSearchRecipes`;
 
-export type SearchRecipesItemT = {
-  title?: string;
-  image?: string;
-  aggregateLikes?: number;
-  readyInMinutes?: number;
-  healthScore?: number;
-  dishTypes?: string[];
-};
-
-export interface SearchRecipesI extends IsLoadingT {
-  recipesList?: SearchRecipesItemT[];
+export interface ISearchRecipes extends TIsLoading {
+  recipesList?: TSearchRecipesItem[];
 }
 
-export type RecipesStateT = {
-  cachedRecipes: SearchRecipesI;
+export type TRecipesState = {
+  cachedRecipes: ISearchRecipes;
 };
 
-export type SearchRecipesParamsT = {
+export type TSearchRecipesParams = {
   number?: number;
   query?: string;
   sort?: string;
@@ -36,6 +28,6 @@ export type SearchRecipesParamsT = {
   maxReadyTime?: number;
 };
 
-export type GetSearchRecipesActionT = {
-  params?: SearchRecipesParamsT;
+export type TGetSearchRecipesAction = {
+  params?: TSearchRecipesParams;
 };

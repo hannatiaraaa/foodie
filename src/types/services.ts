@@ -1,19 +1,19 @@
-import {RecipesStateT} from 'ExploreServices/constants/recipes.type';
+import {TRecipesState} from 'ExploreServices/constants/recipes.type';
 
-export type APIResponseT<ResponseType> = {
+export type TApiResponse<ResponseType> = {
   data?: ResponseType;
   status: number;
 };
 
-export type IsLoadingT = {
+export type TIsLoading = {
   isLoading?: boolean;
 };
 
-export type InitialStateT = {
-  recipes: RecipesStateT;
+export type TInitialState = {
+  recipes: TRecipesState;
 };
 
-export type ArgsSagaT = {
+export type TArgsSaga = {
   type: string;
   hasTriggerLoading?: boolean;
 };

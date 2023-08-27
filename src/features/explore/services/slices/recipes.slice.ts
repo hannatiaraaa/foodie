@@ -1,11 +1,11 @@
 import {PayloadAction, createSlice} from '@reduxjs/toolkit';
 import {
   RECIPES_SLICE,
-  RecipesStateT,
-  SearchRecipesI,
+  TRecipesState,
+  ISearchRecipes,
 } from 'ExploreServices/constants/recipes.type';
 
-export const initialState: RecipesStateT = {
+export const initialState: TRecipesState = {
   cachedRecipes: {
     recipesList: [],
     isLoading: false,
@@ -18,11 +18,11 @@ const RecipesSlice = createSlice({
   reducers: {
     setSearchRecipes: (
       state,
-      {payload}: PayloadAction<SearchRecipesI, string>,
+      {payload}: PayloadAction<ISearchRecipes, string>,
     ) => {
       state.cachedRecipes.recipesList = payload.recipesList;
     },
-    setLoadingRecipes: (state, {payload}: PayloadAction<SearchRecipesI>) => {
+    setLoadingRecipes: (state, {payload}: PayloadAction<ISearchRecipes>) => {
       state.cachedRecipes.isLoading = payload.isLoading;
     },
   },
