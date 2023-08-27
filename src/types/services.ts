@@ -9,7 +9,9 @@ export type IsLoadingT = {
   isLoading?: boolean;
 };
 
-export type InitialStateT = {};
+export type InitialStateT = {
+  recipes: RecipesStateT;
+};
 
 export type ArgsSagaT = {
   type: string;

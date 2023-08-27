@@ -4,6 +4,8 @@
     "moduleResolution": "node",
     "strict": true,
     "baseUrl": "src/",
-    "paths": {}
+    "paths": {
+      "ExploreServices/*": ["./features/explore/services/*"]
+    }
   }
 }
