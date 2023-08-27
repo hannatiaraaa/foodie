@@ -1,5 +1,5 @@
 import React from 'react';
-import {MainRoutes} from './MainRoutes';
+import {MainRoutes} from './main.routes';
 import {createStackNavigator} from '@react-navigation/stack';
 
 const {Navigator, Screen} = createStackNavigator();
