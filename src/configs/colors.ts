@@ -1,0 +1,10 @@
+export enum COLOR {
+  PRIMARY_ORANGE = '#FF6230',
+  LIGHT_TEXT = '#FFF7ED',
+  LIGHT_ORANGE = '#FF8C39',
+  DARK_BACKGROUND = '#25252D',
+}
+
+export enum COLOR_BY_FOOD_TYPE {
+  VEGAN = '#15C458',
+}
