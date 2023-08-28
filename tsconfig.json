@@ -5,6 +5,7 @@
     "strict": true,
     "baseUrl": "src/",
     "paths": {
+      "Explore/*": ["./features/explore/*"],
       "ExploreServices/*": ["./features/explore/services/*"]
     }
   }

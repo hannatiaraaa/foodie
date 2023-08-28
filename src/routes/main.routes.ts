@@ -1,9 +1,9 @@
-import Home from 'screens/Home';
+import Explore from 'screens/Explore';
 
 export const MainRoutes = [
   {
-    name: 'Home',
-    component: Home,
+    name: 'Explore',
+    component: Explore,
     options: {headerShown: false},
   },
 ];

@@ -6,7 +6,7 @@ const {Navigator, Screen} = createStackNavigator();
 
 function Router() {
   return (
-    <Navigator initialRouteName="Home">
+    <Navigator initialRouteName="Explore">
       {MainRoutes.map(value => {
         return (
           <Screen
