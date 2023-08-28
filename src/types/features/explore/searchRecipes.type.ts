@@ -10,6 +10,7 @@ type TNutrition = {
 };
 
 export type TSearchRecipesItem = {
+  id: number;
   title?: string;
   image?: string;
   creditsText?: string;

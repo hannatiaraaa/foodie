@@ -1,5 +1,5 @@
 import {TIsLoading} from 'types/services';
-import {TSearchRecipesItem} from 'Explore/types/searchRecipes.type';
+import {TSearchRecipesItem} from 'types/features/explore/searchRecipes.type';
 
 export const RECIPES_SLICE = 'Recipes';
 export const GET_SEARCH_RECIPES = `${RECIPES_SLICE}/getSearchRecipes`;
