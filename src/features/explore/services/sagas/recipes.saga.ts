@@ -5,8 +5,10 @@ import {
 } from 'ExploreServices/slices/recipes.slice';
 import requestAPI from 'services/requestAPI';
 import {SEARCH_RECIPES_ENDPOINT} from 'ExploreServices/constants/endpoint';
-import {TGetSearchRecipesAction} from 'ExploreServices/constants/recipes.type';
-import {TApiResponse, TArgsSaga} from 'types/services';
+
+// types
+import type {TGetSearchRecipesAction} from 'ExploreServices/constants/recipes.type';
+import type {TApiResponse, TArgsSaga} from 'types/services';
 
 type TSearchRecipesRes = Record<string, any> | undefined;
 

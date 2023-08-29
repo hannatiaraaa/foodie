@@ -1,8 +1,8 @@
 import React from 'react';
-import {StyleSheet, Text, TextStyle} from 'react-native';
+import {StyleSheet, Text, type TextStyle} from 'react-native';
 import {ms} from 'react-native-size-matters';
 import {COLOR} from 'configs/colors';
-import {FontWeight, IGlobalText} from 'types/components/GlobalText.type';
+import {FontWeight, type IGlobalText} from 'types/components/GlobalText.type';
 
 export const GlobalText = ({
   color = COLOR.LIGHT_TEXT,

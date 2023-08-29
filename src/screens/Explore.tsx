@@ -11,17 +11,17 @@ const Explore = () => {
   const dispatch = useAppDispatch();
   const {cachedRecipes} = useAppSelector<TRecipesState>('recipes');
   const {recipesList} = cachedRecipes;
-  const dispatchSearchRecipes = useCallback(() => {
-    dispatch(
-      getSearchRecipes({
-        params: {sort: 'popularity', addRecipeInformation: true, number: 5},
-      }),
-    );
-  }, [dispatch]);
+  // const dispatchSearchRecipes = useCallback(() => {
+  //   dispatch(
+  //     getSearchRecipes({
+  //       params: {sort: 'popularity', addRecipeInformation: true, number: 5},
+  //     }),
+  //   );
+  // }, [dispatch]);
 
-  useEffect(() => {
-    dispatchSearchRecipes();
-  }, [dispatchSearchRecipes]);
+  // useEffect(() => {
+  //   dispatchSearchRecipes();
+  // }, [dispatchSearchRecipes]);
 
   return (
     <SafeAreaView style={styles.container}>

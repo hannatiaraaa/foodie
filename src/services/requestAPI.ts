@@ -1,6 +1,6 @@
-import {setQueryString} from 'hooks/useQueryString';
 import Config from 'react-native-config';
-import {TApiResponse} from 'types/services';
+import {setQueryString} from 'hooks/useQueryString';
+import type {TApiResponse} from 'types/services';
 
 const BASE_URL = 'https://api.spoonacular.com';
 const {API_KEY} = Config;

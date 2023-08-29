@@ -1,7 +1,7 @@
 import React from 'react';
 import {FlatList, StyleSheet} from 'react-native';
 import {ms} from 'react-native-size-matters';
-import {TSearchRecipesItem} from 'types/features/explore/searchRecipes.type';
+import type {TSearchRecipesItem} from 'types/features/explore/searchRecipes.type';
 import {RecipeCard} from './components/RecipeCard';
 
 type Props = {
@@ -9,14 +9,17 @@ type Props = {
 };
 
 const RecipesList = ({data}: Props) => {
-  return (
-    <FlatList
-      data={data}
-      keyExtractor={item => item.id.toString()}
-      contentContainerStyle={styles.content}
-      renderItem={RecipeCard}
-    />
-  );
+  if (data?.length > 0) {
+    return (
+      <FlatList
+        data={data}
+        keyExtractor={item => item.id.toString()}
+        contentContainerStyle={styles.content}
+        renderItem={RecipeCard}
+      />
+    );
+  }
+  return null;
 };
 
 export default RecipesList;

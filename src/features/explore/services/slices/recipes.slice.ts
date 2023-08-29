@@ -1,9 +1,10 @@
 import {PayloadAction, createSlice} from '@reduxjs/toolkit';
 import {
+  type TRecipesState,
+  type ISearchRecipes,
   RECIPES_SLICE,
-  TRecipesState,
-  ISearchRecipes,
 } from 'ExploreServices/constants/recipes.type';
+import type {TIsLoading} from 'types/services';
 
 export const initialState: TRecipesState = {
   cachedRecipes: {
@@ -22,7 +23,7 @@ const RecipesSlice = createSlice({
     ) => {
       state.cachedRecipes.recipesList = payload.recipesList;
     },
-    setLoadingRecipes: (state, {payload}: PayloadAction<ISearchRecipes>) => {
+    setLoadingRecipes: (state, {payload}: PayloadAction<TIsLoading>) => {
       state.cachedRecipes.isLoading = payload.isLoading;
     },
   },

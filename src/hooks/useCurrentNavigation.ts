@@ -1,8 +1,8 @@
 import {createRef} from 'react';
 import {
+  type ParamListBase,
+  type NavigationContainerRef,
   StackActions,
-  ParamListBase,
-  NavigationContainerRef,
 } from '@react-navigation/native';
 
 export const nav = createRef<NavigationContainerRef<ParamListBase>>();

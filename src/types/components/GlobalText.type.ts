@@ -1,5 +1,5 @@
 import {COLOR} from 'configs/colors';
-import {TextProps} from 'react-native';
+import type {TextProps} from 'react-native';
 
 export enum FontWeight {
   _300 = 'Light',

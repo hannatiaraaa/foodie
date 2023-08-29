@@ -1,9 +1,7 @@
 import React from 'react';
-import {View, StyleSheet, ViewStyle, TextStyle} from 'react-native';
+import {View, StyleSheet, type ViewStyle, type TextStyle} from 'react-native';
 import {ms} from 'react-native-size-matters';
-
-// types
-import {IconProps} from 'react-native-vector-icons/Icon';
+import type {IconProps} from 'react-native-vector-icons/Icon';
 import {COLOR} from 'configs/colors';
 import {ICON_COLOR} from 'types/components/Icon.type';
 

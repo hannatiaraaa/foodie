@@ -1,4 +1,4 @@
-import {TRecipesState} from 'ExploreServices/constants/recipes.type';
+import type {TRecipesState} from 'ExploreServices/constants/recipes.type';
 
 export type TApiResponse<ResponseType> = {
   data?: ResponseType;

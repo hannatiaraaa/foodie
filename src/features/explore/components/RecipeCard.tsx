@@ -1,17 +1,19 @@
 import React from 'react';
 import {StyleSheet, TouchableOpacity, View} from 'react-native';
 import {ms} from 'react-native-size-matters';
-import FastImage from 'react-native-fast-image';
-import {RoundedIcon} from 'components/RoundedIcon';
-import {GlobalText} from 'components/GlobalText';
 import {heightPercentageToDP} from 'react-native-responsive-screen';
-import {TSearchRecipesItem} from 'types/features/explore/searchRecipes.type';
+import FastImage from 'react-native-fast-image';
+import type {TSearchRecipesItem} from 'types/features/explore/searchRecipes.type';
 import {
   ICON_BY_FOOD_TYPE,
   ICON_COLOR,
   TEXT_ICON_BY_FOOD_TYPE,
 } from 'types/components/Icon.type';
 import {COLOR} from 'configs/colors';
+
+// components
+import {RoundedIcon} from 'components/RoundedIcon';
+import {GlobalText} from 'components/GlobalText';
 
 type Props = {
   item: TSearchRecipesItem;
