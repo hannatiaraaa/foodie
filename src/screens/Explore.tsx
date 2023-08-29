@@ -1,14 +1,15 @@
-import RecipesList from 'Explore/RecipesList';
-import {getSearchRecipes} from 'ExploreServices/actions/recipes.action';
-import {COLOR} from 'configs/colors';
-import {useAppDispatch, useAppSelector} from 'hooks/useRedux';
 import React, {useCallback, useEffect} from 'react';
 import {StyleSheet} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import RecipesList from 'Explore/RecipesList';
+import {useAppDispatch, useAppSelector} from 'hooks/useRedux';
+import {getSearchRecipes} from 'ExploreServices/actions/recipes.action';
+import type {TRecipesState} from 'Explore/services/constants/recipes.type';
+import {COLOR} from 'configs/colors';
 
 const Explore = () => {
   const dispatch = useAppDispatch();
-  const {cachedRecipes} = useAppSelector('recipes');
+  const {cachedRecipes} = useAppSelector<TRecipesState>('recipes');
   const {recipesList} = cachedRecipes;
   const dispatchSearchRecipes = useCallback(() => {
     dispatch(
