@@ -3,8 +3,30 @@ export enum COLOR {
   LIGHT_TEXT = '#FFF7ED',
   LIGHT_ORANGE = '#FF8C39',
   DARK_BACKGROUND = '#25252D',
+  RED_POSITIVE = '#F83E55',
+  GOLD = '#FFDEA0',
+  WHITE = '#FFFFFF',
+  GRAY = '#575757',
 }
 
-export enum COLOR_BY_FOOD_TYPE {
-  VEGAN = '#15C458',
+export enum TRANSPARENCY_HEX_COLOR {
+  _05 = '0D',
+  _10 = '1A',
+  _15 = '26',
+  _20 = '33',
+  _25 = '40',
+  _30 = '4D',
+  _35 = '59',
+  _40 = '66',
+  _45 = '73',
+  _50 = '80',
+  _55 = '8C',
+  _60 = '99',
+  _65 = 'A6',
+  _70 = 'B3',
+  _75 = 'BF',
+  _80 = 'CC',
+  _85 = 'D9',
+  _90 = 'E6',
+  _95 = 'F2',
 }
