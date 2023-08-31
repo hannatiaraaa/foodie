@@ -1,5 +1,5 @@
 import Config from 'react-native-config';
-import {setQueryString} from 'hooks/useQueryString';
+import {applyQueryString} from 'hooks/useQueryString';
 import type {TApiResponse} from 'types/services';
 
 const BASE_URL = 'https://api.spoonacular.com';
@@ -21,7 +21,7 @@ export function* requestAPI<ResponseType>({
   headers,
 }: Props) {
   const raw = JSON.stringify(body);
-  const queryParams = params ? `&${setQueryString(params)}` : '';
+  const queryParams = params ? `&${applyQueryString(params)}` : '';
   const url = `${BASE_URL}${endpoint}?apiKey=${API_KEY}${queryParams}`;
 
   let res: TApiResponse<ResponseType> | undefined;
