@@ -10,6 +10,7 @@ export const GlobalText = ({
   type = FontWeight._400,
   textAlign = 'left',
   style,
+  ...props
 }: IGlobalText) => {
   const styles = useStyles({
     color,
@@ -18,7 +19,7 @@ export const GlobalText = ({
     textAlign,
   });
 
-  return <Text style={[styles.text, style]} />;
+  return <Text style={[styles.text, style]} {...props} />;
 };
 
 const useStyles = (props: TextStyle) =>
