@@ -17,6 +17,7 @@ export type TSearchRecipesParams = {
   number?: number;
   query?: string;
   sort?: string;
+  sortDirection?: 'asc' | 'desc';
   cuisine?: string;
   diet?: string;
   intolerances?: string;

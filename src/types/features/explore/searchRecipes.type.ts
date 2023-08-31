@@ -20,7 +20,7 @@ export type TSearchRecipesItem = {
   vegan?: boolean;
   glutenFree?: boolean;
   dairyFree?: boolean;
-  healthy?: boolean;
+  veryHealthy?: boolean;
   dishTypes?: string[];
   nutrition?: TNutrition;
 };
