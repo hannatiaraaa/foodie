@@ -3,6 +3,7 @@ import {StyleSheet, TouchableOpacity, View} from 'react-native';
 import {ms} from 'react-native-size-matters';
 import FastImage from 'react-native-fast-image';
 import type {TSearchRecipesItem} from 'types/features/explore/searchRecipes.type';
+import type {TIsLoading} from 'types/services.type';
 
 // configs
 import {COLOR, TRANSPARENCY_HEX_COLOR} from 'configs/colors';
@@ -16,8 +17,10 @@ import {applyDurationFormat} from 'Explore/hooks/applyDurationFormat';
 import {GlobalText} from 'components/GlobalText';
 import {Icon} from 'components/Icon';
 import {FontWeight} from 'types/components/GlobalText.type';
+import {SkeletonLoader} from 'components/Loader';
+import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
 
-interface IRecipeCard extends TSearchRecipesItem {
+interface IRecipeCard extends TSearchRecipesItem, TIsLoading {
   like?: boolean;
   onLikePress?: () => void;
 }
@@ -30,6 +33,8 @@ type Props = {
   item: IRecipeCard;
   index?: number;
 };
+
+const imageHeight = ms(76) * foodLabels.length;
 
 const RenderFoodLabels = ({item}: Props) => {
   return (
@@ -93,8 +98,35 @@ const RenderReadyInMinutes = ({readyInMinutes}: IRenderRecipeCard) => (
   </View>
 );
 
+const RenderSkeletonLoader = () => (
+  <SkeletonLoader enabled>
+    <View style={styles.content}>
+      <SkeletonPlaceholder.Item
+        style={styles.card}
+        borderTopLeftRadius={ms(16)}
+        borderTopRightRadius={ms(16)}
+        height={imageHeight - ms(40)}
+      />
+      <View style={styles.icon}>
+        {foodLabels.map(({id}) => (
+          <View key={id} style={{gap: ms(4)}}>
+            <SkeletonPlaceholder.Item
+              height={ms(40)}
+              width={ms(40)}
+              borderRadius={ms(60)}
+            />
+            <SkeletonPlaceholder.Item key={id} height={ms(12)} />
+          </View>
+        ))}
+      </View>
+    </View>
+    <SkeletonPlaceholder.Item height={ms(40)} borderRadius={ms(32)} />
+  </SkeletonLoader>
+);
+
 export const RecipeCard = ({item, index}: Props) => {
   const {
+    isLoading,
     title,
     image,
     aggregateLikes = 0,
@@ -103,8 +135,12 @@ export const RecipeCard = ({item, index}: Props) => {
     onLikePress,
   } = item;
 
+  if (isLoading) {
+    return <RenderSkeletonLoader />;
+  }
+
   return (
-    <View>
+    <>
       <TouchableOpacity style={styles.content} activeOpacity={0.8}>
         <View style={styles.card}>
           <FastImage
@@ -126,7 +162,7 @@ export const RecipeCard = ({item, index}: Props) => {
         />
         <RenderReadyInMinutes readyInMinutes={readyInMinutes} />
       </View>
-    </View>
+    </>
   );
 };
 
@@ -163,14 +199,14 @@ const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    height: ms(72) * foodLabels.length,
+    height: imageHeight,
     borderTopLeftRadius: ms(16),
     borderTopRightRadius: ms(16),
     paddingBottom: ms(16),
   },
   infoColumn: {
     marginTop: -ms(32),
-    backgroundColor: COLOR.GOLD,
+    backgroundColor: COLOR.SECONDARY_GOLD,
     paddingVertical: ms(8),
     paddingHorizontal: ms(24),
     borderRadius: ms(32),

@@ -3,12 +3,20 @@ import {FlatList, type FlatListProps, StyleSheet} from 'react-native';
 import {ms} from 'react-native-size-matters';
 import type {TSearchRecipesItem} from 'types/features/explore/searchRecipes.type';
 import {RecipeCard} from './components/RecipeCard';
+import type {TIsLoading} from 'types/services.type';
 
-interface Props extends Omit<FlatListProps<TSearchRecipesItem>, 'renderItem'> {
+interface Props
+  extends Omit<FlatListProps<TSearchRecipesItem>, 'renderItem'>,
+    TIsLoading {
   data: TSearchRecipesItem[];
 }
 
-const RecipesList = ({data, onEndReached, ListFooterComponent}: Props) => {
+const RecipesList = ({
+  data,
+  isLoading,
+  onEndReached,
+  ListFooterComponent,
+}: Props) => {
   const [likes, setLikes] = useState<boolean[]>(
     new Array(data.length).fill(false),
   );
@@ -33,6 +41,7 @@ const RecipesList = ({data, onEndReached, ListFooterComponent}: Props) => {
       renderItem={({item: dataItem, index}) => {
         const item = {
           ...dataItem,
+          isLoading,
           like: likes[index],
           onLikePress: () => handleLikePress(index),
         };

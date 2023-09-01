@@ -4,7 +4,7 @@ import {useAppDispatch, useAppSelector} from 'hooks/useRedux';
 
 // component
 import {ContainerWrapper} from 'components/ContainerWrapper';
-import {RefreshLoader} from 'components/RefreshLoader';
+import {RefreshLoader} from 'components/Loader';
 
 // services
 import {getSearchRecipes} from 'ExploreServices/actions/recipes.action';
@@ -42,12 +42,6 @@ const Explore = () => {
   >([]);
   const numberOfNewRecipes = 7;
 
-  const handleDisplayedRecipes = useCallback(() => {
-    if (!isLoading && recipesList.length > 0) {
-      setDisplayedRecipes([...recipesList]);
-    }
-  }, [recipesList, isLoading]);
-
   const dispatchSearchRecipes = useCallback(
     (limit: number, {...payload}: TGetSearchRecipesAction) => {
       dispatch(
@@ -64,6 +58,12 @@ const Explore = () => {
     [dispatch],
   );
 
+  const handleDisplayedRecipes = useCallback(() => {
+    if (!isLoading && recipesList.length > 0) {
+      setDisplayedRecipes([...recipesList]);
+    }
+  }, [recipesList, isLoading]);
+
   useEffect(() => {
     dispatchSearchRecipes(numberOfNewRecipes, {isCached: true});
   }, [dispatchSearchRecipes]);
@@ -73,7 +73,7 @@ const Explore = () => {
   }, [handleDisplayedRecipes]);
 
   const RenderRecipesList = useMemo(() => {
-    const isLoadedNewRecipes = number < total;
+    const isLoadedNewRecipes = !isLoading && number < total;
 
     const onEndReached = ({distanceFromEnd}: TOnEndReachedInfo) => {
       if (distanceFromEnd < 10 && isLoadedNewRecipes) {
@@ -91,11 +91,12 @@ const Explore = () => {
     return (
       <RecipesList
         data={displayedRecipes}
+        isLoading={isLoading}
         onEndReached={onEndReached}
         ListFooterComponent={() => RecipesListFooter({isLoadedNewRecipes})}
       />
     );
-  }, [displayedRecipes, number, total, dispatchSearchRecipes]);
+  }, [displayedRecipes, isLoading, number, total, dispatchSearchRecipes]);
 
   return <ContainerWrapper isSafeArea>{RenderRecipesList}</ContainerWrapper>;
 };
