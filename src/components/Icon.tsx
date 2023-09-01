@@ -89,12 +89,12 @@ const useStyles = ({size, backgroundColor}: Style) =>
       gap: ms(4),
     },
     roundedIcon: {
-      borderRadius: size * 3,
+      borderRadius: ms(size * 3),
       backgroundColor,
       alignItems: 'center',
       justifyContent: 'center',
-      width: size * 2,
-      height: size * 2,
+      width: ms(size * 2),
+      height: ms(size * 2),
     },
     text: {
       flex: 1,
