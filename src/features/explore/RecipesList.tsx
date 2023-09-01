@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
-import {FlatList, StyleSheet} from 'react-native';
+import {FlatList, type FlatListProps, StyleSheet} from 'react-native';
 import {ms} from 'react-native-size-matters';
 import type {TSearchRecipesItem} from 'types/features/explore/searchRecipes.type';
 import {RecipeCard} from './components/RecipeCard';
 
-type Props = {
+interface Props extends Omit<FlatListProps<TSearchRecipesItem>, 'renderItem'> {
   data: TSearchRecipesItem[];
-};
+}
 
-const RecipesList = ({data}: Props) => {
+const RecipesList = ({data, onEndReached, ListFooterComponent}: Props) => {
   const [likes, setLikes] = useState<boolean[]>(
     new Array(data.length).fill(false),
   );
@@ -26,8 +26,10 @@ const RecipesList = ({data}: Props) => {
   return (
     <FlatList
       data={data}
+      onEndReached={onEndReached}
       keyExtractor={item => item.id.toString()}
       contentContainerStyle={styles.content}
+      ListFooterComponent={ListFooterComponent}
       renderItem={({item: dataItem, index}) => {
         const item = {
           ...dataItem,

@@ -9,6 +9,8 @@ import type {TIsLoading} from 'types/services';
 export const initialState: TRecipesState = {
   cachedRecipes: {
     recipesList: [],
+    number: 0,
+    total: 0,
     isLoading: false,
   },
 };
@@ -21,7 +23,7 @@ const RecipesSlice = createSlice({
       state,
       {payload}: PayloadAction<ISearchRecipes, string>,
     ) => {
-      state.cachedRecipes.recipesList = payload.recipesList;
+      state.cachedRecipes = {...state.cachedRecipes, ...payload};
     },
     setLoadingRecipes: (state, {payload}: PayloadAction<TIsLoading>) => {
       state.cachedRecipes.isLoading = payload.isLoading;

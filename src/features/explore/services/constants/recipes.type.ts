@@ -6,7 +6,9 @@ export const GET_SEARCH_RECIPES = `${RECIPES_SLICE}/getSearchRecipes`;
 export const SET_SEARCH_RECIPES = `${RECIPES_SLICE}/setSearchRecipes`;
 
 export interface ISearchRecipes extends TIsLoading {
-  recipesList: TSearchRecipesItem[] | [];
+  recipesList?: TSearchRecipesItem[];
+  number: number;
+  total: number;
 }
 
 export type TRecipesState = {
@@ -29,6 +31,11 @@ export type TSearchRecipesParams = {
   maxReadyTime?: number;
 };
 
+export type TSearchRecipesRes = Record<string, any> | undefined;
+
 export type TGetSearchRecipesAction = {
+  hasTriggerLoading?: boolean;
+  isCached?: boolean;
   params?: TSearchRecipesParams;
+  callbackFn?: (val?: TSearchRecipesItem[]) => void;
 };

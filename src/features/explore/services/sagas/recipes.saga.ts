@@ -7,18 +7,18 @@ import requestAPI from 'services/requestAPI';
 import {SEARCH_RECIPES_ENDPOINT} from 'ExploreServices/constants/endpoint';
 
 // types
-import type {TGetSearchRecipesAction} from 'ExploreServices/constants/recipes.type';
+import type {
+  TGetSearchRecipesAction,
+  TSearchRecipesRes,
+} from 'ExploreServices/constants/recipes.type';
 import type {TApiResponse, TArgsSaga} from 'types/services';
-
-type TSearchRecipesRes = Record<string, any> | undefined;
 
 interface Args extends TArgsSaga {
   payload: TGetSearchRecipesAction;
 }
 
 export function* getSearchRecipesSaga({
-  payload: {params},
-  hasTriggerLoading,
+  payload: {hasTriggerLoading, isCached, params, callbackFn},
 }: Args) {
   try {
     if (!hasTriggerLoading) {
@@ -35,7 +35,23 @@ export function* getSearchRecipesSaga({
     );
 
     if (res?.status === 200) {
-      yield put(setSearchRecipes({recipesList: res.data?.results}));
+      if (res.data) {
+        const {results, number, totalResults} = res.data;
+        if (isCached) {
+          yield put(
+            setSearchRecipes({
+              recipesList: results,
+              number,
+              total: totalResults,
+            }),
+          );
+        } else {
+          yield put(setSearchRecipes({number, total: totalResults}));
+          if (callbackFn) {
+            yield callbackFn(results);
+          }
+        }
+      }
     }
   } finally {
     if (!hasTriggerLoading) {

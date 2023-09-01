@@ -1,48 +1,109 @@
-import React, {useCallback, useEffect} from 'react';
-import {StyleSheet} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import React, {useCallback, useEffect, useMemo, useState} from 'react';
+import {StyleSheet, View} from 'react-native';
 import {useAppDispatch, useAppSelector} from 'hooks/useRedux';
+
+// component
+import {ContainerWrapper} from 'components/ContainerWrapper';
+import {RefreshLoader} from 'components/RefreshLoader';
 
 // services
 import {getSearchRecipes} from 'ExploreServices/actions/recipes.action';
-import type {TRecipesState} from 'Explore/services/constants/recipes.type';
+import type {
+  TGetSearchRecipesAction,
+  TRecipesState,
+} from 'Explore/services/constants/recipes.type';
+import type {TSearchRecipesItem} from 'types/features/explore/searchRecipes.type';
 
 // features
 import RecipesList from 'Explore/RecipesList';
-import {COLOR} from 'configs/colors';
+import {scale} from 'react-native-size-matters';
+
+type TRecipesListFooter = {
+  isLoadedNewRecipes: boolean;
+};
+
+type TOnEndReachedInfo = {distanceFromEnd: number};
+
+const RecipesListFooter = ({isLoadedNewRecipes}: TRecipesListFooter) => {
+  if (isLoadedNewRecipes) {
+    return <RefreshLoader />;
+  }
+  return <View style={styles.recipesListFooter} />;
+};
 
 const Explore = () => {
   const dispatch = useAppDispatch();
   const {cachedRecipes} = useAppSelector<TRecipesState>('recipes');
-  const {recipesList} = cachedRecipes;
-  const dispatchSearchRecipes = useCallback(() => {
-    dispatch(
-      getSearchRecipes({
-        params: {
-          sort: 'meta-score',
-          addRecipeInformation: true,
-          number: 10,
-        },
-      }),
-    );
-  }, [dispatch]);
+  const {recipesList = [], number, total} = cachedRecipes;
+  const isLoading = cachedRecipes.isLoading;
+
+  const [displayedRecipes, setDisplayedRecipes] = useState<
+    TSearchRecipesItem[]
+  >([]);
+  const numberOfNewRecipes = 7;
+
+  const handleDisplayedRecipes = useCallback(() => {
+    if (!isLoading && recipesList.length > 0) {
+      setDisplayedRecipes([...recipesList]);
+    }
+  }, [recipesList, isLoading]);
+
+  const dispatchSearchRecipes = useCallback(
+    (limit: number, {...payload}: TGetSearchRecipesAction) => {
+      dispatch(
+        getSearchRecipes({
+          params: {
+            sort: 'meta-score',
+            addRecipeInformation: true,
+            number: limit,
+          },
+          ...payload,
+        }),
+      );
+    },
+    [dispatch],
+  );
 
   useEffect(() => {
-    dispatchSearchRecipes();
+    dispatchSearchRecipes(numberOfNewRecipes, {isCached: true});
   }, [dispatchSearchRecipes]);
 
-  return (
-    <SafeAreaView style={styles.container}>
-      <RecipesList data={recipesList} />
-    </SafeAreaView>
-  );
+  useEffect(() => {
+    handleDisplayedRecipes();
+  }, [handleDisplayedRecipes]);
+
+  const RenderRecipesList = useMemo(() => {
+    const isLoadedNewRecipes = number < total;
+
+    const onEndReached = ({distanceFromEnd}: TOnEndReachedInfo) => {
+      if (distanceFromEnd < 10 && isLoadedNewRecipes) {
+        dispatchSearchRecipes(number + numberOfNewRecipes, {
+          hasTriggerLoading: true,
+          callbackFn: res => {
+            if (res) {
+              setDisplayedRecipes(res);
+            }
+          },
+        });
+      }
+    };
+
+    return (
+      <RecipesList
+        data={displayedRecipes}
+        onEndReached={onEndReached}
+        ListFooterComponent={() => RecipesListFooter({isLoadedNewRecipes})}
+      />
+    );
+  }, [displayedRecipes, number, total, dispatchSearchRecipes]);
+
+  return <ContainerWrapper isSafeArea>{RenderRecipesList}</ContainerWrapper>;
 };
 
 export default Explore;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: COLOR.DARK_BACKGROUND,
+  recipesListFooter: {
+    height: scale(20),
   },
 });
