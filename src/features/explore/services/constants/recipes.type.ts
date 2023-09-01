@@ -1,4 +1,4 @@
-import type {TIsLoading} from 'types/services';
+import type {TIsLoading} from 'types/services.type';
 import type {TSearchRecipesItem} from 'types/features/explore/searchRecipes.type';
 
 export const RECIPES_SLICE = 'Recipes';

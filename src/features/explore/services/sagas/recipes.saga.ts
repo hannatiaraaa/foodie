@@ -11,7 +11,7 @@ import type {
   TGetSearchRecipesAction,
   TSearchRecipesRes,
 } from 'ExploreServices/constants/recipes.type';
-import type {TApiResponse, TArgsSaga} from 'types/services';
+import type {TApiResponse, TArgsSaga} from 'types/services.type';
 
 interface Args extends TArgsSaga {
   payload: TGetSearchRecipesAction;

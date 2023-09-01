@@ -4,7 +4,7 @@ import {
   type ISearchRecipes,
   RECIPES_SLICE,
 } from 'ExploreServices/constants/recipes.type';
-import type {TIsLoading} from 'types/services';
+import type {TIsLoading} from 'types/services.type';
 
 export const initialState: TRecipesState = {
   cachedRecipes: {
