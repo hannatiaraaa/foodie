@@ -23,7 +23,7 @@ interface IRecipeCard extends TSearchRecipesItem {
 }
 
 interface IRenderRecipeCard extends Omit<IRecipeCard, 'id'> {
-  likeIcon?: string;
+  likeIcon?: 'heart' | 'heart-fill';
 }
 
 type Props = {
@@ -67,7 +67,7 @@ const RenderTitle = ({title}: IRenderRecipeCard) => (
 
 const RenderLike = ({
   aggregateLikes,
-  likeIcon = 'heart-fill',
+  likeIcon = 'heart',
   onLikePress,
 }: IRenderRecipeCard) => (
   <View style={styles.row}>
