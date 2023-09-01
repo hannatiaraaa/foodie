@@ -19,7 +19,12 @@ const sagaMiddleware = createSagaMiddleware();
 
 export const store = configureStore({
   reducer: PersistedReducer,
-  middleware: gDM => gDM().concat(logger, sagaMiddleware),
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoreActions: true,
+      },
+    }).concat(logger, sagaMiddleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;
